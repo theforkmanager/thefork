@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 3em;
+  background-image: url(assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 58%;
+  padding-left: 3em;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  margin-top: 0em;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  color: white;
+  margin-top: -0.8em;
+  font-size: 2.1em;
+  font-weight: 200;
+}
+
+.text img {
+  width: 0.4em;
+  height: auto;
+  margin-top: 0.6em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10em;
+  width: 30em;
+}
+
+#manager-logo {
+  width: 28em;
+  height: auto;
+  margin-top: 6em;
+}
+
+#fork-logo {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 28em;
+  margin-top: 3em;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-top: 5em;
+}
+
+.input-wrapper input {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.2em;
+  border-bottom: 1px solid #00645a;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 15px;
+  font-size: 1.4em;
+  font-weight: 600;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.input-wrapper input:focus ~ label,
+.input-wrapper input:not(:placeholder-shown) ~ label {
+  top: -1.4em;
+  font-size: 1.2em;
+}
+
+#toggle-password {
+  position: absolute;
+  right: -0.8em;
+  top: 2.2em;
+  transform: translateY(-50%);
+  background: none;
+  width: 1.4em;
+  border: none;
+  cursor: pointer;
+}
+
+.eye-icon,
+.eye-slash-icon {
+  color: #999;
+}
+
+.eye-icon img,
+.eye-slash-icon img {
+  width: 1.5em;
+}
+
+.links {
+  position: relative;
+  margin-top: 1em;
+  left: 8.5em;
+  margin-bottom: 1.2em;
+  text-decoration: none;
+  color: #006b6a;
+}
+
+.links a {
+  text-decoration: none;
+  color: #006b6a;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+input[type="submit"] {
+  background-color: #00665c;
+  color: white;
+  border: none;
+  padding: 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 5em;
+  border-radius: 0.2em;
+  width: 25em;
+  height: 3em;
+}
+
+input[type="submit"]:hover {
+  background-color: #0e5954;
+}
+
+.signup-link {
+  margin-top: 1.2em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.signup-link a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 9.5em;
+  margin-left: -6em;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #127167;
+  margin: 0;
+  width: 15em;
+  margin-right: -4.5em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer-links p {
+  width: 10em;
+  margin-left: -1.2em;
+  margin-right: -1.3em;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+}
+
+.copyright {
+  margin-top: -1em;
+  font-size: 1em;
+  margin-left: 8em;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #manager-logo {
+    display: none;
+  }
+
+  #fork-logo {
+    display: block;
+    width: 7em;
+    height: auto;
+    margin-bottom: 1em;
+    margin-top: 4.8em;
+  }
+
+  .text {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 14em;
+  }
+
+  .links {
+    left: 2em;
+  }
+
+  .signup-link {
+    margin-bottom: 2em;
+    display: none;
+  }
+
+  .footer {
+    margin-top: 8em;
+  }
+
+  #fork {
+    display: none;
+  }
+
+  i {
+    display: none;
+  }
+
+  .copyright {
+    align-items: center;
+    margin-left: 5em;
+  }
+}
